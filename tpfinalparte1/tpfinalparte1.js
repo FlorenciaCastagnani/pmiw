@@ -1,3 +1,6 @@
+
+//------------- VIDEO EXPLICATIVO https://youtu.be/8UVhJR1dm0w
+
 let inicio;
 let sasara = [];
 let dial;
@@ -73,7 +76,6 @@ function preload() {
      ost[3] = loadSound('/assets/ost-3.mp3');
      ost[4] = loadSound('/assets/undertale.mp3');
 
-     
      fotos[1] = loadImage('/assets/sasarapez.png')
      fotos[2] = loadImage('/assets/sasarafoto.png')
      
@@ -92,14 +94,10 @@ function preload() {
 
 
      mic = loadImage('/assets/microfono.png')
-     
-     
-
-
-
+        
   dial = loadStrings( '/assets/dialogos4.txt');
   indice = 0;
-  e = 0;  // "pantalla_01"
+  e = 0;  
   
   
 }
@@ -151,7 +149,7 @@ function draw() {
 
 
     
-  if ( e== 0) {
+  if ( e== 0) { // ---------------------------- PANTALLA CARGA
     image( inicio, 0, 0 );
     //fill(255);
     //strokeWeight(5);
@@ -766,10 +764,10 @@ if (e === 48) {
    e++;
   indice++;
   botones
-  if ( indice == 61 ) {
+  if ( indice == 63 ) {
     indice = 0;
   }
-  if ( e == 61 ) {
+  if ( e == 63 ) {
     e = 0;
   }
 
